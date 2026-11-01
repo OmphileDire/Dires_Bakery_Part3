@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Contact Dire’s Bakery in Amandasig, Akasia. Find the location, opening hours and send the bakery a message.">
+  <meta name="keywords" content="bakery Amandasig, bakery Akasia, fresh bread, custom cakes, cupcakes, pastries">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact Dire’s Bakery | Amandasig, Akasia">
+  <meta property="og:description" content="Contact Dire’s Bakery in Amandasig, Akasia. Find the location, opening hours and send the bakery a message.">
+  <meta property="og:type" content="website">
+  <title>Contact Dire’s Bakery | Amandasig, Akasia</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Dire's Bakery logo">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-banner"><div class="container"><p class="eyebrow">Contact</p><h1>Come and say hello</h1><p>We are a local bakery project based in Johannesburg, Gauteng.</p></div></section>
+  <section class="section"><div class="container contact-grid">
+    <div>
+      <h2>Contact details</h2>
+      <p><strong>Address:</strong> 5 Dias, Amandasig, Akasia, 0118</p>
+      <p><strong>Phone:</strong> 010 000 0000</p>
+      <p><strong>Email:</strong> hello@diresbakery.co.za</p>
+      <h3>Opening hours</h3>
+      <ul class="hours"><li>Monday - Saturday: 07:00 - 17:00</li><li>Sunday: Closed</li></ul>
+    </div>
+    <div class="map-placeholder" aria-label="Interactive map showing the project location">
+      <div id="bakery-map" role="application" aria-label="Interactive OpenStreetMap map centred on 5 Dias, Amandasig"></div>
+      <p><a class="text-link" href="https://www.google.com/maps/place/5+Dias,+Amandasig,+Akasia,+0118/@-25.682273,28.1053121,17z/" target="_blank" rel="noopener noreferrer">Open this location in Google Maps</a></p>
+    </div>
+  </div></section>
+  <section class="section section-accent">
+    <div class="container form-layout">
+      <div><p class="eyebrow">Get in touch</p><h2>Send us a message</h2><p>Use this form for general questions, feedback or other messages. It is separate from the custom-order enquiry form.</p></div>
+      <form class="enquiry-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html" novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <p class="visually-hidden"><label>Leave this field empty <input name="bot-field"></label></p>
+        <div class="form-row">
+          <div><label for="contact-name">Full name *</label><input id="contact-name" name="name" type="text" required minlength="2" maxlength="60" autocomplete="name"></div>
+          <div><label for="contact-email">Email address *</label><input id="contact-email" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div><label for="contact-phone">Phone number</label><input id="contact-phone" name="phone" type="tel" pattern="[0-9+()\s-]{7,20}" placeholder="e.g. 071 234 5678"></div>
+        <div><label for="message-type">Message type *</label><select id="message-type" name="messageType" required><option value="">Choose a message type</option><option>General question</option><option>Feedback</option><option>Partnership</option><option>Other</option></select></div>
+        <div><label for="contact-message">Your message *</label><textarea id="contact-message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea></div>
+        <button class="button" type="submit">Prepare email</button>
+        <p id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-hint">This demonstration opens your default email application. It does not send a message automatically.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>Dire's Bakery</h2>
+      <p>Fresh bread, pastries and celebration cakes made with care.</p>
+    </div>
+    <div>
+      <h2>Opening Hours</h2>
+      <p>Monday - Saturday: 07:00 - 17:00<br>Sunday: Closed</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p>Johannesburg, Gauteng<br>hello@diresbakery.co.za<br>010 000 0000</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2026 Dire's Bakery.</p>
+  </div>
+</footer>
+</body>
+</html>

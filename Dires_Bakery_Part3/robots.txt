@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After deployment, replace the placeholder with the final public sitemap URL.
+Sitemap: https://YOUR-DEPLOYED-DOMAIN/sitemap.xml

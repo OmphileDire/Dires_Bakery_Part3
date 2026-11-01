@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<rect width="600" height="400" fill="#f6ead8"/>
+<path d="M150 265l245-120 70 125-245 70z" fill="#f4c95d"/>
+<path d="M150 265l245-120 28 50-245 120z" fill="#fff7ef"/>
+<path d="M220 230l145-70" stroke="#8b2f3d" stroke-width="14" stroke-linecap="round"/>
+<text x="300" y="350" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#5b1f2a">Cake Slice</text>
+</svg>

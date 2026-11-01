@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Request a quote for custom celebration cakes, cupcakes and bakery orders from Dire’s Bakery in Amandasig.">
+  <meta name="keywords" content="bakery Amandasig, bakery Akasia, fresh bread, custom cakes, cupcakes, pastries">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Custom Cake Enquiry | Dire’s Bakery">
+  <meta property="og:description" content="Request a quote for custom celebration cakes, cupcakes and bakery orders from Dire’s Bakery in Amandasig.">
+  <meta property="og:type" content="website">
+  <title>Custom Cake Enquiry | Dire’s Bakery</title>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Dire's Bakery logo">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-banner"><div class="container"><p class="eyebrow">Custom orders</p><h1>Make an enquiry</h1><p>Tell us what you need and we will use the details to prepare a quote.</p></div></section>
+  <section class="section"><div class="container form-layout">
+    <form class="enquiry-form" id="enquiry-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/enquiry.html" novalidate>
+      <input type="hidden" name="form-name" value="enquiry">
+      <p class="visually-hidden"><label>Leave this field empty <input name="bot-field"></label></p>
+      <!-- Required fields provide basic browser-side validation for Part 1. -->
+      <div class="form-row">
+        <div><label for="name">Full name *</label><input id="name" name="name" type="text" required minlength="2" maxlength="60" autocomplete="name"></div>
+        <div><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="form-row">
+        <div><label for="date">Event date *</label><input id="date" name="date" type="date" required></div>
+        <div><label for="guests">Number of people</label><input id="guests" name="guests" type="number" min="1" max="500" value="10"></div>
+      </div>
+      <div><label for="cake-type">Cake type *</label>
+        <select id="cake-type" name="cake-type" required>
+          <option value="">Please choose</option><option>Birthday cake</option><option>Celebration cake</option><option>Cupcake order</option><option>Other</option>
+        </select>
+      </div>
+      <div><label for="message">Order details *</label><textarea id="message" name="message" rows="6" required placeholder="Tell us about flavour, size, colours or any other requirements."></textarea></div>
+      <p class="form-hint">A rough guide: custom cakes start at R350. The final price depends on size and decoration.</p>
+      <button class="button" type="submit">Check estimate</button>
+      <p id="enquiry-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+    </form>
+    <aside class="side-note"><h2>Before you enquire</h2><p>Custom orders are planned in advance. Please include the event date and as much detail as possible.</p><p>This student project demonstrates client-side validation and an estimated starting price. It does not confirm a real order or check live availability.</p></aside>
+  </div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>Dire's Bakery</h2>
+      <p>Fresh bread, pastries and celebration cakes made with care.</p>
+    </div>
+    <div>
+      <h2>Opening Hours</h2>
+      <p>Monday - Saturday: 07:00 - 17:00<br>Sunday: Closed</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p>Johannesburg, Gauteng<br>hello@diresbakery.co.za<br>010 000 0000</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2026 Dire's Bakery.</p>
+  </div>
+</footer>
+</body>
+</html>

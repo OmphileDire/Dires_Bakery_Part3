@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<rect width="600" height="400" fill="#f8eee2"/>
+<ellipse cx="300" cy="280" rx="170" ry="45" fill="#b96945"/>
+<rect x="140" y="180" width="320" height="105" rx="15" fill="#f4c95d"/>
+<path d="M140 205c70 30 110-30 160 0s90-30 160 0v35c-70 30-110-30-160 0s-90-30-160 0z" fill="#fff7ef"/>
+<circle cx="220" cy="165" r="18" fill="#8b2f3d"/><circle cx="300" cy="150" r="18" fill="#8b2f3d"/><circle cx="380" cy="165" r="18" fill="#8b2f3d"/>
+<text x="300" y="350" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#5b1f2a">Celebration Cake</text>
+</svg>

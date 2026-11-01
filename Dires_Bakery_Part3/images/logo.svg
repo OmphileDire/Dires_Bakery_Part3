@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90">
+<rect width="300" height="90" rx="18" fill="#5b1f2a"/>
+<circle cx="48" cy="45" r="28" fill="#f4c95d"/>
+<path d="M34 48c4-18 24-18 28 0M38 54h20" fill="none" stroke="#5b1f2a" stroke-width="5" stroke-linecap="round"/>
+<text x="88" y="42" font-family="Georgia,serif" font-size="26" fill="#fff">Dire's Bakery</text>
+<text x="89" y="64" font-family="Arial,sans-serif" font-size="12" fill="#f4c95d">Freshly baked with care</text>
+</svg>
